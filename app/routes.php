@@ -29,8 +29,6 @@
 
 	Route::get('/logout', 'HomeController@logout');
 
-	//Route::get('/tags/{name}')
-
 	Route::resource('posts', 'PostsController');
 
 	Route::resource('users', 'UsersController');
