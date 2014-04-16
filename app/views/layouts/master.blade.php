@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Lava | Designed By Theme Armada</title>
-  <meta name="keywords" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
-  <meta name="description" content="">
+  @yield('title')
   <meta name="viewport" content="width=device-width">
   
   <meta property="og:title" content="Lava | Designed By Theme Armada">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.themearmada.com/demos/lava">
-	<meta property="og:site_name" content="Theme Armada">
-	<meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.themearmada.com/demos/lava">
+  <meta property="og:site_name" content="Theme Armada">
+  <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -190,58 +188,58 @@
         </div>
           
         <div class="row margin-40">
-      		
-      		<!--Project Thumbnail One-->
-      		<div class="col-sm-4">
-      			<div class="thumbs">
-        			<img src="img/portfolio1.jpg" class="img-responsive" alt="Image Size 430x280">
-        			<a href="individual-work.html">
-        				<span class="title">
-        					<span><i class="fa fa-link fa-2x"></i></span>
-        				</span>	
-        			</a>
-      			</div>
-      			
-      			<div class="project-title margin-30">
-      		    <h4>Breakroom</h4>
-      		  </div>
-      		</div>
-      		
-      		<!--Project Thumbnail Two-->
-      		<div class="col-sm-4">
-      			<div class="thumbs">
-        			<img src="img/portfolio2.jpg" class="img-responsive" alt="Image Size 430x280">
-        			<a href="individual-work.html">
-        				<span class="title">
-        					<span><i class="fa fa-link fa-2x"></i></span>
-        				</span>	
-        			</a>
-      			</div>
-      			
-      			<div class="project-title margin-30">
-      		    <h4>White Sneaker</h4>
-      		  </div>
-      		</div>
-      		
-      		<!--Project Thumbnail Three-->
-      		<div class="col-sm-4">
-      			<div class="thumbs">
-        			<img src="img/portfolio3.jpg" class="img-responsive" alt="Image Size 430x280">
-        			<a href="individual-work.html">
-        				<span class="title">
-        					<span><i class="fa fa-link fa-2x"></i></span>
-        				</span>	
-        			</a>
-      			</div>
-      			
-      			<div class="project-title margin-30">
-      		    <h4>Theme Armada</h4>
-      		  </div>
-      		</div>
-      		
-      	</div><!--End Row of Work-->
           
-    		<div class="row">
+          <!--Project Thumbnail One-->
+          <div class="col-sm-4">
+            <div class="thumbs">
+              <img src="img/portfolio1.jpg" class="img-responsive" alt="Image Size 430x280">
+              <a href="individual-work.html">
+                <span class="title">
+                  <span><i class="fa fa-link fa-2x"></i></span>
+                </span> 
+              </a>
+            </div>
+            
+            <div class="project-title margin-30">
+              <h4>Breakroom</h4>
+            </div>
+          </div>
+          
+          <!--Project Thumbnail Two-->
+          <div class="col-sm-4">
+            <div class="thumbs">
+              <img src="img/portfolio2.jpg" class="img-responsive" alt="Image Size 430x280">
+              <a href="individual-work.html">
+                <span class="title">
+                  <span><i class="fa fa-link fa-2x"></i></span>
+                </span> 
+              </a>
+            </div>
+            
+            <div class="project-title margin-30">
+              <h4>White Sneaker</h4>
+            </div>
+          </div>
+          
+          <!--Project Thumbnail Three-->
+          <div class="col-sm-4">
+            <div class="thumbs">
+              <img src="img/portfolio3.jpg" class="img-responsive" alt="Image Size 430x280">
+              <a href="individual-work.html">
+                <span class="title">
+                  <span><i class="fa fa-link fa-2x"></i></span>
+                </span> 
+              </a>
+            </div>
+            
+            <div class="project-title margin-30">
+              <h4>Theme Armada</h4>
+            </div>
+          </div>
+          
+        </div><!--End Row of Work-->
+          
+        <div class="row">
           <div class="col-sm-12 text-center">
             <a class="more" href="3-column.html"><i class="fa fa-chevron-circle-right fa-2x gray"></i></a>
           </div>
@@ -360,14 +358,14 @@
           <div class="col-sm-10 col-sm-offset-1 text-center">
             <!--Social Icons-->          
             <ul class="social-icons">
-    					<li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
-    					<li><a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
-    					<li><a class="google" href="http://www.googleplus.com" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
-    					<li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
-    					<li><a class="pinterest" href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
-    					<li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
-    					<li><a class="Github" href="http://www.github.com" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
-    				</ul>
+              <li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+              <li><a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+              <li><a class="google" href="http://www.googleplus.com" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
+              <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+              <li><a class="pinterest" href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
+              <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+              <li><a class="Github" href="http://www.github.com" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
+            </ul>
           </div>
         </div>
         

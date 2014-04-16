@@ -11,5 +11,28 @@
 |
 */
 
+/* Uncomment to Log Eloquent Queries */
+// Event::listen('illuminate.query', function($sql, $bindings, $time){
+//   Log::info($sql);
+//   Log::info(implode($bindings, ', '));
+// });
 
-	Route::get('/', 'HomeController@showWelcome');
+	Route::get('/', 'HomeController@showHome');
+
+	Route::get('/resume', 'HomeController@showResume');
+
+	Route::get('/portfolio', 'HomeController@showPortfolio');
+	
+	Route::get('/login', 'HomeController@showLogin');
+
+	Route::post('/login', 'HomeController@doLogin');
+
+	Route::get('/logout', 'HomeController@logout');
+
+	//Route::get('/tags/{name}')
+
+	Route::resource('posts', 'PostsController');
+
+	Route::resource('users', 'UsersController');
+
+	Route::resource('pages', 'PagesController');
