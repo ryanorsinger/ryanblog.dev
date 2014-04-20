@@ -4,11 +4,11 @@
   @yield('title')
   <meta name="viewport" content="width=device-width">
   
-  <meta property="og:title" content="Lava | Designed By Theme Armada">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://www.themearmada.com/demos/lava">
-  <meta property="og:site_name" content="Theme Armada">
-  <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada">
+  <!-- <meta property="og:title" content="Lava | Designed By Theme Armada"> -->
+  <!-- <meta property="og:type" content="website"> -->
+  <!-- <meta property="og:url" content="http://www.themearmada.com/demos/lava"> -->
+  <!-- <meta property="og:site_name" content="Theme Armada"> -->
+  <!-- <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada"> -->
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/font-awesome.min.css">

@@ -8,3 +8,27 @@
 	</title>
 @stop
 
+@section('style')
+	<style>
+		
+		
+	</style>
+@stop
+
+@section('topscript')
+<script>
+
+</script>
+@stop
+
+
+@section('content')
+
+@stop
+
+@section('bottomscript')
+<script>
+	
+
+</script>
+@stop
