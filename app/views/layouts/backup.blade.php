@@ -1,33 +1,84 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  @yield('title')
+  <meta name="viewport" content="width=device-width">
+  
+  <!-- <meta property="og:title" content="Lava | Designed By Theme Armada"> -->
+  <!-- <meta property="og:type" content="website"> -->
+  <!-- <meta property="og:url" content="http://www.themearmada.com/demos/lava"> -->
+  <!-- <meta property="og:site_name" content="Theme Armada"> -->
+  <!-- <meta property="og:description" content="made with bootstrap, wrap bootstrap themes, bootstrap agency themes, creative bootstrap sites, Lava theme, responsive bootstrap theme, mobile website themes, bootstrap portfolio, theme armada"> -->
 
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  
 
-@section('title')
-	<title>Ryan Orsinger | Web Application Developer | San Antonio</title>
-	</title>
-@stop
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
 
-@section('meta')
-	<meta name="keywords" content="web application developer, san antonio web application developer, ryan orsinger, ryan orsinger web developer">
-	<meta name="description" content="Ryan Orsinger">
-@stop
+  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-@section('style')
-	<style>
-		
-		
-	</style>
-@stop
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
 
-@section('topscript')
-<script>
+<body>
 
-</script>
-@stop
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand img-responsive" href="index.html"><img src="img/logo.png" alt="logo"></a>
+		</div>
+		<div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="index.html">Welcome</a></li>
+			<li><a href="blog.html">Blog</a></li>
 
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio &amp; Work <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="full-width.html">Full Width</a></li>
+				  <li><a href="services.html">Services</a></li>
+				  <li><a href="about.html">About</a></li>
+				  <li><a href="team.html">Team</a></li>
+				  <li><a href="pricing.html">Pricing</a></li>
+				  <li><a href="blog.html">Blog Loop</a></li>
+				  <li><a href="blog-article.html">Blog Article</a></li>
+				  <li><a href="login.html">Log In</a></li>
+				  <li><a href="signup.html">Sign Up</a></li>
+				  <li><a href="icons.html">Icons</a></li>
+				</ul>
+			  </li>
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="3-column.html">3 Column</a></li>
+				  <li><a href="4-column.html">4 Column</a></li>
+				  <li><a href="individual-work.html">Individual Work</a></li>
+				</ul>
+			  </li>
+			  <li><a href="contact.php">Hire Ryan</a></li>
+			  <li><a href="contact.php">Contact</a></li>
+			  <!-- <li><a href="login.html">Login</a></li> -->
+		  </ul>
+		</div><!--/.navbar-collapse -->
+	  </div>
+	</div>
 
-@section('content')
-
-<!-- Carousel
+	<!-- Carousel
 	Change your images in the main.css file.
 	================================================== -->
 	<div id="header" class="carousel slide animated fadeIn" data-ride="carousel">
@@ -43,8 +94,8 @@
 		<div class="item one active">
 		  <div class="container animated fadeInUp">
 			<div class="carousel-caption">
-			  <h1>Web Development</h1>
-			  <p class="lead margin-40"><em>Full Stack Web Application Developement</em></p>
+			  <h1>Introducing Lava</h1>
+			  <p class="lead margin-40"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
 			  <a class="btn-main" href="about.html"><i class="icon-chevron-right"></i> More</a>
 			</div>
 		  </div>
@@ -52,7 +103,7 @@
 		<div class="item two">
 		  <div class="container">
 			<div class="carousel-caption">
-			  <h1>IT Consulting</h1>
+			  <h1>Built With Bootstrap</h1>
 			  <p class="lead margin-40"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
 			  <a class="btn-main" href="services.html"><i class="icon-chevron-right"></i> More</a>
 			</div>
@@ -81,28 +132,27 @@
 		  <!--Seciton 1-->
 		  <div class="col-sm-4 service margin-30">
 			<a href="#">
-			  <i class="fa fa-code fa-4x gray"></i>
-			  <h3>Full Stack Development</h3>
-			  <p>I develop PHP and JavaScript web applications using Laravel, jQuery, and Bootstrap frameworks to program full front-end and back-end functionality.</p>
+			  <i class="fa fa-mobile-phone fa-4x light-gray"></i>
+			  <h3>Mobile Responsive</h3>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</a>
 		  </div>
 		  
 		  <!--Seciton 2-->
 		  <div class="col-sm-4 service margin-30">
 			<a href="#">
-			  <i class="fa fa-bug fa-4x gray"></i>
-			  <h3>Tech Consulting</h3>
-			  <p>I start by listening. My interview process with clients helps me understand your needs, constraints, and core business logic necessary to create an appropriate and maintainable solution</p>
+			  <i class="fa fa-thumbs-up fa-4x light-gray"></i>
+			  <h3>Built With Bootstrap</h3>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</a>
 
 		  </div>
 		  
 		  <!--Seciton 3-->
 		  <div class="col-sm-4 service margin-30">
-			  <i class="fa fa-code-fork fa-4x gray"></i>
 			<a href="#">
-			  <h3>Problem Solving</h3>
-			  <p></p>
+			  <i class="fa fa-flag fa-4x light-gray"></i>
+			  <h3>Over 249 Icons</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</a>
 
@@ -296,11 +346,64 @@
 	  </div>
 	</section>
 
-@stop
-
-@section('bottomscript')
-<script>
 	
+	<!--Bottom Section-->
+	<section id="bottom">
+	  <div class="container">
+		<div class="row margin-40">
+		  <div class="col-sm-10 col-sm-offset-1 text-center">
+			<p>1234 Main Street Atlanta, GA 30305 | 404.555.5555  |  <a href="mailto:support@themearmada.com"><i class="icon-envelope-alt"></i> support@themearmada.com</a></p>
+			<hr>
+		  </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-sm-10 col-sm-offset-1 text-center">
+			<!--Social Icons-->          
+			<ul class="social-icons">
+			  <li><a class="twitter" href="http://www.twitter.com/themearmada" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+			  <li><a class="facebook" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+			  <li><a class="google" href="http://www.googleplus.com" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
+			  <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+			  <li><a class="pinterest" href="http://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a></li>
+			  <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+			  <li><a class="Github" href="http://www.github.com" target="_blank"><i class="fa fa-github-alt fa-3x"></i></a></li>
+			</ul>
+		  </div>
+		</div>
+		
+	  </div>
+	</section>
+	
+	
+	<section id="footer">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-sm-12 text-center">
+			<p>@ Copyright. All Rights Reserved. Created by <a href="http://www.themearmada.com">Theme Armada.</a></p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	
+	<!-- Javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script>
+	  !function ($) {
+		$(function(){
+		  $('#header').carousel()
+		})
+	  }(window.jQuery)
+	</script>
 
-</script>
-@stop
+
+   
+	</body>
+</html>

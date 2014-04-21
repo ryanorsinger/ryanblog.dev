@@ -1,3 +1,9 @@
+@extends('layouts.master')
+
+@section('title')
+  <title>Ryan Orsinger's Blog: </title>
+  </title>
+@stop
 
 <!DOCTYPE html>
 <html lang="en"><head>

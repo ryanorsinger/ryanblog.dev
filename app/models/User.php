@@ -13,7 +13,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected $table = 'users';
 
 	/**
-	* Login Validation rules for User
 	*/
 	public static $rules = array(
 	    'email'      => 'required|max:100',
@@ -114,5 +113,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 	    $this->attributes['username'] = strtolower($value);
 	}
+
+	
 
 }
