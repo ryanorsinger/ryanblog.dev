@@ -39,8 +39,8 @@
 		</div>
 		<div class="navbar-collapse collapse">
 		  <ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href="index.html"><i class="fa-terminal"></i>Home</a></li>
-			<li><a href="blog.html">Blog</a></li>
+			<li class="active"><a href="{{{ action('HomeController@showHome') }}}"><i class="fa-terminal"></i>Home</a></li>
+			<li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 
 			  <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio &amp; Work <b class="caret"></b></a>
@@ -65,8 +65,17 @@
 				  <li><a href="individual-work.html">Individual Work</a></li>
 				</ul>
 			  </li>
-			  <li><a href="contact.php">Hire Ryan</a></li>
-			  <li><a href="contact.php">Contact</a></li>
+			<ul class="nav navbar-nav navbar-right">
+				@if (Auth::check())
+				<li><a href="{{{ action('HomeController@logout') }}}">Logout ({{ Auth::user()->username }})</a></li>
+				@else
+				<li><a href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
+				@endif
+
+				
+			</ul>
+			  <!-- <li><a href="contact.php">Hire Ryan</a></li> -->
+			  <!-- <li><a href="contact.php">Contact</a></li> -->
 			  <!-- <li><a href="login.html">Login</a></li> -->
 		  </ul>
 		</div><!--/.navbar-collapse -->
