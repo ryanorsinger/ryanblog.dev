@@ -82,8 +82,10 @@
 		  <div class="col-sm-4 service margin-30">
 			<a href="#">
 			  <i class="fa fa-code fa-4x gray"></i>
-			  <h3>Full Stack Development</h3>
-			  <p>I develop PHP and JavaScript web applications using Laravel, jQuery, and Bootstrap frameworks to program full front-end and back-end functionality.</p>
+			<h3>Full Stack Development</h3>
+			<p>I develop PHP and JavaScript web applications using Laravel, jQuery, and Bootstrap frameworks to program full front-end and back-end functionality.</p>
+			<p>For organizations using Microsoft, I develop automation and business intelligence applications with Microsoft SharePoint and Dynamics CRM.</p>
+			
 			</a>
 		  </div>
 		  
@@ -92,7 +94,7 @@
 			<a href="#">
 			  <i class="fa fa-bug fa-4x gray"></i>
 			  <h3>Tech Consulting</h3>
-			  <p>I start by listening. My interview process with clients helps me understand your needs, constraints, and core business logic necessary to create an appropriate and maintainable solution</p>
+			  <p>I start by listening. My interview process with clients helps me understand the needs, constraints, and core business logic necessary to create an appropriate and maintainable solution.</p>
 			</a>
 
 		  </div>
@@ -102,7 +104,7 @@
 			  <i class="fa fa-code-fork fa-4x gray"></i>
 			<a href="#">
 			  <h3>Problem Solving</h3>
-			  <p></p>
+			  <p>Problem solving begins with caring and executes with persistence, adaptability, and networking to get the right answers. </p>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 			</a>
 
@@ -196,101 +198,6 @@
 		  <div class="col-sm-12 text-center">
 			<a class="more" href="3-column.html"><i class="fa fa-chevron-circle-right fa-2x gray"></i></a>
 		  </div>
-		</div>
-		
-	  </div>
-	</section>
-	
-	
-	<!--Testimonial Section-->
-	<section id="testimonial" class="section">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-sm-3 margin-30">
-			<img src="img/testimonial-img.png" alt="Title">
-		  </div>
-		  
-		  <div class="col-sm-9">
-			<h2>“Lava has been an asset to our company by providing us with a cutting edge look and a web presence that shows off our work and skills.”</h2>
-			<div class="testimonial-source pull-right">Jeff | Ceo - Creative Company</div>
-		  </div>
-		</div>
-	  </div>
-	</section>
-	
-	
-	<!--Latest News-->
-	<section id="latest-news" class="section">
-	  <div class="container">
-		<div class="row margin-40">
-		  <div class="col-sm-12 text-center dark-gray">
-			<h3>Latest News</h3>
-		  </div>
-		</div>
-		
-		<div class="row">
-		  
-		  <!--News Article-->
-		  <div class="col-sm-3 text-center">
-			<div class="latest-article">
-			<img src="img/latest-news1.jpg" class="img-responsive" alt="Title">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br />
-			<a class="more" href="individual-blog.html"><i class="fa fa-chevron-circle-right fa-2x gray margin-20"></i></a>
-			</div>
-		  </div>
-		  
-		  <!--News Article-->
-		  <div class="col-sm-3 text-center">
-			<div class="latest-article">
-			<img src="img/latest-news2.jpg" class="img-responsive" alt="Title">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br />
-			<a class="more" href="individual-blog.html"><i class="fa fa-chevron-circle-right fa-2x gray margin-20"></i></a>
-			</div>
-		  </div>
-		  
-		  <!--News Article-->
-		  <div class="col-sm-3 text-center">
-			<div class="latest-article">
-			<img src="img/latest-news3.jpg" class="img-responsive" alt="Title">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br />
-			<a class="more" href="individual-blog.html"><i class="fa fa-chevron-circle-right fa-2x gray margin-20"></i></a>
-			</div>
-		  </div>
-		  
-		  <!--News Article-->
-		  <div class="col-sm-3 text-center">
-			<div class="latest-article">
-			<img src="img/latest-news4.jpg" class="img-responsive" alt="Title">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br />
-			<a class="more" href="individual-blog.html"><i class="fa fa-chevron-circle-right fa-2x gray margin-20"></i></a>
-			</div>
-		  </div>
-		  
-		</div>
-	  </div>
-	</section>
-	
-	<!--Twitter Feed-->
-	<section id="twitter" class="section">
-	  <div class="container">
-		<div class="row">
-		  <div class="col-sm-12 text-center">
-			<i class="fa fa-twitter fa-4x gray margin-20"></i>
-		  </div>
-		</div>
-		
-		<div class="row">
-		
-		  <div class="col-sm-6">
-			<blockquote class="twitter-tweet" lang="en"><p>Theme Armada New Website Launch <a href="http://t.co/YLbXUFhz5d">http://t.co/YLbXUFhz5d</a></p>&mdash; Theme Armada (@themearmada) <a href="https://twitter.com/themearmada/statuses/404968762446970880">November 25, 2013</a></blockquote>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		  </div>
-		  
-		  <div class="col-sm-6">
-			<blockquote class="twitter-tweet" lang="en"><p>Our sites up and CSSMania <a href="http://t.co/KKaKX75WrH">http://t.co/KKaKX75WrH</a> <a href="https://twitter.com/cssmania">@cssmania</a> - Give it a vote if you like it!</p>&mdash; Theme Armada (@themearmada) <a href="https://twitter.com/themearmada/statuses/403515461158961152">November 21, 2013</a></blockquote>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		  </div>
-		  
 		</div>
 		
 	  </div>

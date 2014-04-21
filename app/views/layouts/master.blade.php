@@ -72,20 +72,13 @@
 		</div><!--/.navbar-collapse -->
 	  </div>
 	</div>
+
+
 @yield('content')
 	
-
 	
 	<!--Bottom Section-->
 	<section id="bottom">
-	  <div class="container">
-		<div class="row margin-40">
-		  <div class="col-sm-10 col-sm-offset-1 text-center">
-			<p>110 E Houston St, San Antonio, TX 78205 | 210.789-9714  |  <a href="mailto:admin@ryanorsinger.com"><i class="icon-envelope-alt"></i> admin@ryanorsinger.com</a></p>
-			<hr>
-		  </div>
-		</div>
-		
 		<div class="row">
 		  <div class="col-sm-10 col-sm-offset-1 text-center">
 			<!--Social Icons-->          
@@ -95,10 +88,20 @@
 			  <li><a class="twitter" href="http://www.twitter.com/orsinger" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
 			  <li><a class="google" href="https://plus.google.com/+RyanOrsinger/" target="_blank"><i class="fa fa-google-plus fa-3x"></i></a></li>
 			  <li><a class="stackoverflow" href="http://stackoverflow.com/users/2690869/ryan-orsinger" target="_blank"><i class="fa fa-stack-overflow fa-3x"></i></a></li>
-
 			  </ul>
 		  </div>
 		</div>
+		<br><br>
+	  <div class="container">
+		<div class="row margin-40">
+		  <div class="col-sm-10 col-sm-offset-1 text-center">
+			<p>110 E Houston St, San Antonio, TX 78205 | 210.789-9714  |  <a href="mailto:admin@ryanorsinger.com"><i class="icon-envelope-alt"></i> admin@ryanorsinger.com</a></p>
+			<hr>
+			<p>Web application development | Tech Consulting</p>
+			<p></p>
+		  </div>
+		</div>
+		
 		
 	  </div>
 	</section>
