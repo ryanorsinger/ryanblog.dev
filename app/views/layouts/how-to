@@ -1,0 +1,6 @@
+"msg": "git remote add web ssh://root@162.243.246.127:22/var/git/ryanorsinger.com.git"
+}
+
+TASK: [debug msg="git push web +master:refs/heads/master"] ********************
+ok: [wardy] => {
+    "msg": "git push web +master:refs/heads/master"
