@@ -1,0 +1,21 @@
+
+
+~ Why I joined CodeUp
+~ 
+~ 
+~ My development experience prior before CodeUp
+~ 
+~ 
+~ Keyboard shortcuts == command and controlN˜
+~ "3 > 2 > 1 == FALSE""
+~ 
+
+~Great sites to learn code in your browser:
+www.CodeAcademy
+http://try.jquery.com/
+www.Koding.com
+www.hackerrank.com
+www.codewars.com
+
+
+~ How to deploy a Laravel PHP web application to Digital Ocean hosting

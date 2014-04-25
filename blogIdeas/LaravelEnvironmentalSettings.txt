@@ -1,0 +1,14 @@
+Laravel's default status is production. That's good to know. But I want my local development to have debugging turned on and other features enabled as well.
+Here's how we do it.
+
+In our laravel instance, go to /bootstrap/start.php
+Find the | "Detect The Application Environment" section.
+
+$env = $app->detectEnvironment(function(){
+    return $_SERVER['LARAVEL_ENV'] == 'local' ? 'local' : 'production';
+    
+    });
+    
+Now go to your virtual host on your vagrant box 
+
+and add "SetEnv LARAVEL_ENV local". Now restart apache. 

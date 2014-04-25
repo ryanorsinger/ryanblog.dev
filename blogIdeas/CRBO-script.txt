@@ -1,0 +1,10 @@
+
+Good afternoon, everyone!
+My name is Ryan Orsinger and I'm excited to introduce my collegues Joseph Villafranca and Izzy Rodriguez and our program CRBO. Together, we developed CRBO, the Computer Refurbisher's Back Office. We programmed the Computer Refurbisher's Back Office using PHP, JavaScript, jQuery, Bootstrap for HTML and CSS, and the Laravel MVC framework. We developed in the Vagrant environment and rapidly deployed to cloud hosting using Ansible scripts. My contribution to the project was creating forms and views, authoring controller logic, and database design. Together, we developed CRBO to solve a an immediate business problem. Here to share more about our story is Izzy:
+
+Hi my name is Izzy and my contribution to the project was front end styling and development, database migration and database seeding using artisan commands in Laravel, and Quality Control. In addition being on the team, I am also the owener of 210geeks.com. 
+
+Hi, my name is Joseph and contribution the project was:
+- writing jQuery to calculate the real time price changes
+- creating RESTful controllers with Laravel API
+- Generating models to match the database

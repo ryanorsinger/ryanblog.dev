@@ -1,0 +1,31 @@
+Quicky way to make a new vagrant box
+copy an existing vagrant folder to a newFolder/
+
+$cd ~/
+$ cp -r ~/vagrant-lamp newFolder/
+
+(be sure to add the / after the foldername)
+(prune out anything that doesn't need to be there)
+
+$ cd newFolder/
+$ ls -la
+$ rm -rf .vagrant
+
+$ vim VagrantFile 
+and change the hostname to newBoxname or whatever
+
+from your newFolder/
+$ vagrant up
+
+then the newBoxname provisions and boots
+don't worry if you get a puppet error. 
+
+Vagrant will launch virtual box and provision a clone of a different name of your vagrant box
+---
+
+the newFolder/ vagrant directory is linked/synced w/ symbolic link to 
+/vagrant/ on the VM for newBoxname
+
+
+Modify config, environment, and such as necessary.
+Add virtual hosts as necessary

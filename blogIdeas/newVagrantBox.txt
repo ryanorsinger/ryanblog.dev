@@ -1,0 +1,40 @@
+Quick way to make a new vagrant box
+copy an existing vagrant folder to a newFolder/
+
+using iTerm on your mac,
+
+$ cd ~/
+$ mkdir newFolder
+$ cp -r ~/vagrant-lamp newFolder/
+
+(be sure to add the / after the foldername)
+
+$ cd newFolder/
+$ ls -la
+$ rm -rf .vagrant
+// this is so that when you type "vagrant up", vagrant will create a new box
+
+$ vim VagrantFile 
+and change the hostname to newBoxname or whatever you'd like to name the new virtual box. Quantal2 is a good option.
+inside of vim, hit the letter i to enter INSERT mode. Then change the hostname's boxname. then hit ESC and type colon followed by wq to quit.
+You could also open VagrantFile up in Sublime to accomplish this w/o messing with vim.
+
+from your newFolder/
+$ vagrant up
+
+then the newBoxname provisions and boots
+don't worry if you get a puppet error about removing mount files...
+
+Vagrant will launch virtual box and provision a clone of a different name of your vagrant box
+
+Now you have a copy of the vagrant box we used in CodeUp. You can mess it up and do Rails on it and go hog wild. 
+from your newFolder/
+
+do vagrant ssh and it will drop you into newBoxname in the home folder.
+like usual, cd /vagrant/ and you will go to the see that /vagrant/ on your newBox links and syncs with your newFolder/ on your Mac!
+
+You will see a copy of everything that existed in your /vagrant-lamp/ directory. 
+
+You will need to modify apache virtual hosts to create local dev sites like newproject.dev or whatnot.
+
+P.S. Manage virtual boxes from the VirtualBox app. Recommend using only one virtual box at a time for resources and also so there aren't any port conflicts.

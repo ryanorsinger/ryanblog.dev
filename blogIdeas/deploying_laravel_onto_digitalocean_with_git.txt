@@ -1,0 +1,30 @@
+Deploying is a feature
+"cut to shape, file to fit, paint to match" 
+
+
+- hard code laravel 4.1.25 in composer.json because breaking updates like the 4.1.26 one are irritating and are a time sink!
+- Purchase your desired domain name
+- setup digitalocean droplet as per cturner80/ansible setup script directions
+- be sure and certain to accurately execute Turner's directions.
+- ssh into your VPS droplet and make sure to do the following things:
+    + cd /var/www/yourapp.com
+    + "cat composer.json" or "vi composer.json" to check for the right laravel required instance (in this case, I set laravel to 4.1.25 from 4.1.* to avoid the 4.1.26 shennenigans..... and those are shennanigans because that kind of breaking update is not compliant with 
+
+- run "composer install"... and get a nice error {"error":{"type":"ErrorException","message":"Undefined index: DB_HOST","file":"\/var\/www\/refurbr.co\/app\/config\/database.php","line":57}}{"error":{"type":"ErrorException","message":"Undefined index: DB_HOST","file":"\/var\/www\/refurbr.co\/app\/config\/database.php","line":57}}
+
+- remember that .env.php on yourapp.dev is part of .gitignore (uh, because there's plain text passwords in there...)
+- from /var/www/yourapp.com, type vi .env.php to enter vi editor
+- vi editor is what's called a modal text editor. that sounds fancy but it just means there are different modes for inserting, navigating, and manipulating the document. Windows Notepad is a "modeless" editor because there's ony one mode, the edit mode. So vi is a little different but don't be skeered.
+- hit the letter "i" on your keyboard and sets vim to be in an INSERT mode. this is where you can type in new text
+- type in the exact contents of yourapp.dev's .env.php file. (copying and pasting won't work well since it's a different kind of editor and it's running on a different server.)
+- once you've typed in the same contents of yourapp.dev's .env.php, hit the ESC key, type a colon, then the letters wq with no spaces and then hit ENTER
+- ok, now you can do "composer install"
+- go ahead and do "composer update" once you're done.
+- be sure to give your DNS settings to take and accurately point your domain name to the IP address of your digitalocean droplet.
+- ok, this can take 30 mins to 24 hours. In my experience, it's usually less than an hour, but don't be surprised if it takes a few.
+- "holy crap, what's the deal? 404? Not Found - nginx?" you say?
+- no worries, mate! It could be one of either of these simple fixes:
+    + you did like I did and forgot to do "cd /var/www/yourapp.com/" followed by "chmod -R g+w app/storage".. which was in Turner's misc notes. We read those completely, right?
+    + OR you might have a flash of brilliance and use a different browser to goto www.yourapp.com since you remembered that browsers cache stuff all the time!
+
+- 

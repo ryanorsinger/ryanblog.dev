@@ -1,0 +1,4 @@
+checking email doesn't write code
+checking twitter doesn't fix bugs
+reading about new frameworks doesn't fix the deploy bug on the current framework in use.
+surfing for "the right splash page background picture" is not as effective as fixing the UI and UX elements on application critical pages.

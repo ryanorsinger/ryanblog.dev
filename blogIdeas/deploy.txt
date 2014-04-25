@@ -1,0 +1,34 @@
+server init
+from /dekstop/blog/anisble/digital-ocean-ansible/ run this command to do the server init
+
+ansible-playbook -i hosts server-init.yml -e "hostname=wardy" -e "domain=ryanorsinger.com" -e "admin_email=ryan.orsinger@gmail.com"
+
+then run the site create from the same directory
+
+ansible-playbook -i hosts site-create.yml -e "hostname=wardy" -e "domain=ryanorsinger.com"
+
+the log for the ansible playbook site-create will produce the appropriate git commands.
+
+We need to run these from the blog.dev folder or wherever our local repository exists.
+
+git remote add web ssh://root@162.243.246.127:22/var/git/ryanorsinger.com.git
+
+git push web +master:refs/heads/master
+
+git push web
+
+- now configure your DNS 
+
+ssh onto your VPS, do 
+cd /var/www/example.com
+
+then
+chmod -R g+w app/storage
+
+then
+composer install
+
+then
+create a database that matches the database name of the database in your web application
+create a user on the VPS's database that matches the user
+add appropriate permissions to mysql user
